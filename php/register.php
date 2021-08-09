@@ -12,7 +12,7 @@
     $User = mysqli_fetch_assoc($verificaUser);
 
     if($User['usuario'] == $usuario){
-        $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Usuário já existente!</div>";
+        $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Usuário já existente! Experimente outro.</div>";
         header("Location: http://localhost/Crianca_Alerta/pages/cadastro.php");
     }else if($senha != $confirmeSenha){
         $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Senhas não compatíveis!</div>";

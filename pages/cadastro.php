@@ -83,7 +83,7 @@
                 </div>
                 <div class="rodape-copyright">
                     <div class="rodape-content-copyright">
-                        © 2021 All copyrights reserved to Criança Alerta LTDA
+                        © 2019 - 2021 All copyrights reserved to Criança Alerta LTDA
                         <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
                     </div>
                     <div class="rodape-imagem-box">

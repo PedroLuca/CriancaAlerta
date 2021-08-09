@@ -23,12 +23,12 @@
             header("Location: http://localhost/Crianca_Alerta/pages/jogo.php");
             echo "certo senha";
         }else {
-            $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Erro! Senha incorreta!</div>";
+            $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Erro! Usuário ou senha incorretos!</div>";
             header("Location: http://localhost/Crianca_Alerta/pages/login.php");
         }
     }else {
-        $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Erro! Usuário inexistente, cadastre-se!</div>";
-        header("Location: http://localhost/Crianca_Alerta/pages/cadastro.php");
+        $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Erro! Usuário ou senha incorretos!</div>";
+        header("Location: http://localhost/Crianca_Alerta/pages/login.php");
     }
 
      //Mudar para $senhaCrypt para buscar a senha criptografada no banco
