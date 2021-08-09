@@ -30,41 +30,4 @@
         $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Erro! Usuário ou senha incorretos!</div>";
         header("Location: http://localhost/Crianca_Alerta/pages/login.php");
     }
-
-     //Mudar para $senhaCrypt para buscar a senha criptografada no banco
-
-    // if($verificaLogin){
-    //     // $dadosUser = mysqli_fetch_assoc($verificaLogin);
-    //     if($senhaCrypt == $senhaBD){
-    //         $_SESSION['erro'] = "<div class='alert sucesso' role='alert'>Usuário logado com sucesso!</div>";
-    //         $_SESSION['logged'] = True;
-    //         header("Location: http://localhost/Crianca_Alerta/pages/jogo.php");
-    //     }else if($senhaCrypt != $senhaBD){
-    //         $_SESSION['erro'] = "<div class='alert erro' role='alert'>Erro! Usuário ou senha não encontrados!</div>";
-    //         header("Location: http://localhost/Crianca_Alerta/pages/login.php");
-    //     }
-    // }
-
-    // echo mysqli_num_rows($verificaLogin);
-    // if(mysqli_num_rows($verificaLogin) >= 1){
-    //     $_SESSION['erro'] = "<div class='alert sucesso' role='alert'>Usuário logado com sucesso!</div>";
-    //     $_SESSION['logged'] = True;
-    //     header("Location: http://localhost/Crianca_Alerta/pages/jogo.php");
-    // }
-    // if(mysqli_num_rows($verificaLogin) <= 0){
-    //     $_SESSION['erro'] = "<div class='alert erro' role='alert'>Erro! Usuário ou senha não encontrados!</div>";
-    //     header("Location: http://localhost/Crianca_Alerta/pages/login.php");
-    // }
-
-//     $buscarUsuario = "SELECT usuario, senha FROM Criancas WHERE usuario = '$usuarioLogin'"; 
-
-//     $resultadoUsuario = mysqli_query($con, $buscarUsuario);
-
-//     if($resultadoUsuario){
-//         $dadosUser = mysqli_fetch_assoc($resultadoUsuario);
-//         if(crypt($senhaLogin, $dadosUser['senha']))
-//         $_SESSION['usuario'] = $dadosUser['usuario'];
-//         $_SESSION['logged'] = True;
-//     }
-
 ?>
