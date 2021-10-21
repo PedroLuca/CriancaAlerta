@@ -20,18 +20,42 @@
             <ul class="menu">
                 <li id="menu-general"><a href="">MENU</a>
                     <ul>
-                        <li><a href="http://localhost/Crianca_Alerta/index.php">Início</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/tipo_de_violencia.html">Tipos de Violência</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/quebrando_silencio.html">Quebrando o Silêncio</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/direitos.html">Direito das Crianças</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/login.php">Jogue nosso jogo</a></li>
+                        <li><a href="../index.php">Início</a></li>
+                        <li><a href="tipo_de_violencia.html">Tipos de Violência</a></li>
+                        <li><a href="quebrando_silencio.html">Quebrando o Silêncio</a></li>
+                        <li><a href="direitos.html">Direito das Crianças</a></li>
+                        <li><a href="login.php">Jogue nosso jogo</a></li>
                     </ul>
                 </li>
             </ul>
-            <a href="http://localhost/Crianca_Alerta/index.php"><img id="logo-central" src="../media/logo-nome.png"></a>
-            <a href="http://localhost/Crianca_Alerta/index.php"><img id="menu-logo" src="../media/logo-oficial.png"></a>
+            <a href="../index.php"><img id="logo-central" src="../media/logo-nome.png"></a>
+            <a href="../index.php"><img id="menu-logo" src="../media/logo-oficial.png"></a>
         </nav>
-        <div class="row">
+        <section class="conteudo-login-cadastro">
+            <div class="form-login">
+                <div class="cabecalho">
+                    <h3>Login</h3>
+                </div>
+                <div class="form">
+                    <form method="POST" action="../php/loginValidation.php">
+                        <div class="form-field">
+                            <label for="username">Nome de usuário</label>
+                            <input type="text" id="username" name="usuario">
+                        </div>
+                        <div class="form-field">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" name="senha">
+                        </div>
+                        <div class="form-field">
+                            <button class="btn-large waves-effect #64b5f6 blue lighten-2" style="width:100%">Entrar</button>
+                        </div></br>
+                        <p style="text-align: center;"> Não tem cadastro?
+                        <a href="cadastro.php" class="login-link">Registre-se agora!</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="row conteudo-login-cadastro">
             <div class="col s12 m4 offset-m4">
                 <div class="card">
                     <div class="card-action #64b5f6 blue lighten-2 white-text">
@@ -52,12 +76,12 @@
                             </div></br>
                             <p style="text-align: center;"> Não tem cadastro?
                             <a href="cadastro.php" class="login-link">Registre-se agora!</a></p>
-                        </forn>
-                     </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <footer class="rodape-login">
+        </div> -->
+        <footer class="rodape">
             <div class="rodape-content">
                 <div class="linhas">
                     <div class="rodape-text">
@@ -70,8 +94,7 @@
                     <ul>
                         <li><a class="rodape-web" href="https://instagram.com/crianca.alerta" target="_blank">Instagram</a></li>
                         <li><a class="rodape-web" href="https://github.com/criancaalerta" target="_blank">Github</a></li>
-                        <li class="rodape-web">Projetocriancaalerta@outlook.com</li>
-                        <!--<li><a class="rodape-web" href="#!">Link 1</a></li>-->
+                        <li><a class="rodape-web" href="mailto:projetocriancaalerta@outlook.com">Projetocriancaalerta@outlook.com</a></li>
                     </ul>
                 </div>
             </div>

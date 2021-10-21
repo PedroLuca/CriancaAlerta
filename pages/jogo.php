@@ -8,11 +8,11 @@
         $_SESSION = array();
         session_unset();
         session_destroy();
-        header('Location: http://localhost/Crianca_Alerta/index.php');
+        header('Location: ../index.php');
     }
 
     if (!$logged){
-        header("Location: http://localhost/Crianca_Alerta/pages/login.php");
+        header("Location: login.php");
     }
 ?>
 
@@ -34,21 +34,21 @@
             <ul class="menu">
                 <li id="menu-general"><a href="">MENU</a>
                     <ul>
-                        <li><a href="http://localhost/Crianca_Alerta/index.php">Início</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/tipo_de_violencia.html">Tipos de Violência</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/quebrando_silencio.html">Quebrando o Silêncio</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/direitos.html">Direito das Crianças</a></li>
+                        <li><a href="../index.php">Início</a></li>
+                        <li><a href="tipo_de_violencia.html">Tipos de Violência</a></li>
+                        <li><a href="quebrando_silencio.html">Quebrando o Silêncio</a></li>
+                        <li><a href="direitos.html">Direito das Crianças</a></li>
                         <li><a href="?logout=1">Sair</a></li>
                     </ul>
                 </li>
                 <li id="menu-general"></li>
             </ul>
-            <a href="http://localhost/Crianca_Alerta/index.php"><img id="logo-central" src="../media/logo-nome.png"></a>
-            <a href="http://localhost/Crianca_Alerta/index.php"><img id="menu-logo" src="../media/logo-oficial.png"></a>
+            <a href="../index.php"><img id="logo-central" src="../media/logo-nome.png"></a>
+            <a href="../index.php"><img id="menu-logo" src="../media/logo-oficial.png"></a>
         </nav>
-        <div class="joguinho">
-            <iframe src="https://scratch.mit.edu/projects/531279850/embed" allowtransparency="true" width="1040" height="750" frameborder="0" scrolling="no" allowfullscreen></iframe>
-        </div>
+        <section class="joguinho">
+            <iframe src="https://scratch.mit.edu/projects/531279850/embed" allowtransparency="true" class="iframe" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </section>
         <footer class="rodape">
             <div class="rodape-content">
                 <div class="linhas">
@@ -62,7 +62,7 @@
                     <ul>
                         <li><a class="rodape-web" href="https://instagram.com/crianca.alerta" target="_blank">Instagram</a></li>
                         <li><a class="rodape-web" href="https://github.com/criancaalerta" target="_blank">Github</a></li>
-                        <li class="rodape-web">Projetocriancaalerta@outlook.com</li>
+                        <li><a class="rodape-web" href="mailto:projetocriancaalerta@outlook.com">Projetocriancaalerta@outlook.com</a></li>
                     </ul>
                 </div>
             </div>

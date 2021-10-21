@@ -20,14 +20,14 @@
         if($dadosUser['senha'] == $senhaCrypt){
             $_SESSION['mensagem'] = "<div class='alert sucesso' role='alert'>Usuário logado. Bom jogo $usuarioLogin!</div>";
             $_SESSION['logged'] = True;
-            header("Location: http://localhost/Crianca_Alerta/pages/jogo.php");
+            header("Location: ../pages/jogo.php");
             echo "certo senha";
         }else {
             $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Erro! Usuário ou senha incorretos!</div>";
-            header("Location: http://localhost/Crianca_Alerta/pages/login.php");
+            header("Location: ../pages/login.php");
         }
     }else {
         $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Erro! Usuário ou senha incorretos!</div>";
-        header("Location: http://localhost/Crianca_Alerta/pages/login.php");
+        header("Location: ../pages/login.php");
     }
 ?>

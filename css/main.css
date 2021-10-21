@@ -78,10 +78,8 @@ body {
 }
 
 .menu li a:hover{
-	background: #64b5f6; /*#df4a16*/
+	background: #64b5f6;
 	color: #fff;
-	-moz-box-shadow: 0 3px 10px 0 #CCC;
-	-webkit-box-shadow: 0 0px 3px 0 blue;
 	text-shadow: 0px 0px 5px #fff;
 }
 
@@ -103,9 +101,9 @@ body {
 }
 
 .main-title {
-    text-align: center;
+  text-align: center;
 	height: 3rem;
-	width: 99.3vw;
+	width: 100vw;
 }
 
 #menu-logo {
@@ -151,36 +149,24 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-div.conteudo{
+.conteudo{
+	width: 100vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 100vw;
-	height: calc(100vh - 4rem);/*100vh*/
-	padding: 5rem;
-	/*margin-top: 8rem;*/
-}
-
-div.joguinho{
-	width: 100vw;
 	height: calc(100vh - 4rem);
 	padding: 5rem;
-	text-align: center;
 }
 
-
-@media screen and (max-width: 767px){
-	div.conteudo{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		width: 100vw;
-		height: auto;
-		padding: 5rem;
-		/*margin-top: 8rem;*/
-	}
+.joguinho{
+	width: 100vw;
+	height: calc(100vh - 4rem);
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .cartao .cartao-image {
@@ -201,51 +187,16 @@ div.joguinho{
 /* FIM CARDS INDEX */
 
 /*CARDS QUEBRANDO */
-div.conteudo-quebrando{
-    display: flex;
-    flex-direction: row;
+.conteudo-quebrando{
+	margin: 5rem 0;
+  display: flex;
+  flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	width: 99.3vw;
-	height: calc(100vh - 15rem);
-}
-
-.cartao-quebrando {
-	position: relative;
-	background-color: white;
-	-webkit-transition: -webkit-box-shadow .25s;
-	transition: -webkit-box-shadow .25s;
-	transition: box-shadow .25s;
-	transition: box-shadow .25s, -webkit-box-shadow .25s;
-	border-radius: 10px 10px 10px 10px;
-	margin: 5rem 0 10rem 0;
-	width: 30rem;
-}
-
-.cartao-quebrando .cartao-image-quebrando {
-	position: relative;
-}
-
-.cartao-quebrando .cartao-image-quebrando img {
-	display: block;
-	border-radius: 10px 10px 10px 10px;
-	position: relative;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	height: 40rem;
-	width: 30rem;
-}
-
-.cartao-quebrando .cartao-action {
-	background-color: inherit;
-	border-top: 1px solid rgba(160, 160, 160, 0.2);
-  	border-radius: 0px 0px 4px 4px;
-	position: relative;
-	padding: 16px 24px;
-	font-size: 20px;
-	word-wrap: break-word;
+	width: 100vw;
+	height: auto;
+	flex-wrap: wrap;
+	gap: 2rem;
 }
 /* FIM CARDS QUEBRANDO */
 
@@ -258,21 +209,13 @@ div.conteudo-quebrando{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*@media screen and (min-height: 888px) {
-    .rodape-login {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-} */
-
 .rodape-login {
 	color: #fff;
 	background-color: #0072cf;
 	bottom: 0 !important;
 	padding: 0 !important;
-    left: 0;
-    position: fixed;
+  left: 0;
+  position: fixed;
 	width: 100vw;
 }
 
@@ -294,23 +237,16 @@ div.conteudo-quebrando{
 }
   
 .rodape-copyright {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 	overflow: hidden;
 	min-height: 50px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-		-ms-flex-align: center;
-			align-items: center;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-			justify-content: space-between;
+	width: 100vw;
+
 	color: rgba(255, 255, 255, 0.8);
 	background-color: rgba(51, 51, 51, 0.08);
-	width: 100vw;
 }
 
 .rodape-content {
@@ -322,16 +258,14 @@ div.conteudo-quebrando{
 	justify-content: space-between;
 	
 }
-@media screen and (max-width: 767px){
-	.rodape-content{
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-		width: 90%;
-		justify-content: space-between;
-	}
-}
 
+.rodape-content-copyright {
+	margin-left: 1rem;
+	max-width: 1920px;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
 
 .rodape-web {
 	color: white;
@@ -342,31 +276,16 @@ div.conteudo-quebrando{
 	color: black;
 }
 
-.rodape-content-copyright {
-	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
-	max-width: 1920px;
-	width: 90%;
-	justify-content: space-between;
-	color: white;
-}
-
 .rodape-text {
 	font-size: 18px;
 	text-align: justify;
 	width: 70rem;
 }
 
-#rodape-cadastro {
-	padding-top: 12rem;
-	display: flex;
-}
-
 .rodape-imagem-box {
 	display: flex;
 	flex-direction: row;
-	margin: 0 auto;
+	margin-right: 1.5rem;
 }
 
 .rodape-imagem {
@@ -494,15 +413,17 @@ div.conteudo-quebrando{
 
 /* FLIP CARDS TIPOS DE VIOLÊNCIA */
 .conteudo-tipos{
-    display: flex;
-    flex-direction: row;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+	justify-content: space-around; 
 	align-items: center;
-	width: 99.3vw;
-	height: calc(100vh - 20rem);
+	width: 100vw;
+	height: auto;
+	gap: 2rem;
 	margin-top: 3rem;
 	margin-bottom: 5rem;
-	padding: 0rem 5rem 0rem 5rem;
+	padding: 0rem 5rem;
+	flex-wrap: wrap;
 }
 
 .flip-card-tipos {
@@ -682,22 +603,13 @@ div.conteudo-quebrando{
 
 /* PÁGINA DIREITOS DAS CRIANÇAS */
 .direitos-page{
-    display: flex;
-    flex-direction: row;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	width: 99.3vw;
-	height: calc(100vh - 17rem);/*100vh*/
-}
-
-.direitos-page-list{
-    display: flex;
-    flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	height: 70vh;/*100vh*/
-	width: 99.3vw;
-	margin-bottom: 10rem;
+	gap: 5rem;
+	width: 100vw;
+	height: auto;
 }
 
 .lista-direitos {
@@ -729,3 +641,470 @@ div.conteudo-quebrando{
 	box-shadow: 0px 8px 16px rgba(0,0,0,0.2), 0 6px 10px rgba(0,0,0,0.19);*/
 }
 /* FIM DIREITOS */
+
+.iframe {
+	width: 1040px;
+	height: 750px;
+}
+
+/* NOVO LOGIN E CADASTRO */
+.conteudo-login-cadastro {
+	min-height: 70vh;
+	height: auto;
+	width: 100vw;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-login {
+	width: 40rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cabecalho {
+	background: #64b5f6;
+	padding: 2rem;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+
+.cabecalho h3 {
+	margin: 0 !important;
+	color: #fff;
+}
+
+.form {
+	padding: 1rem;
+	background: #fff;
+}
+/* FIM LOGIN E CADASTRO */
+
+@media screen and (max-width: 767px){
+	.conteudo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem 0;
+		gap: 2rem 0;
+		width: 100vw;
+		height: auto;
+	}
+
+	.conteudo-login-cadastro {
+		height: auto;
+		width: 100vw;
+	
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	
+		margin-bottom: 5rem;
+	}
+
+	.cartao {
+		position: relative;
+		background-color: white;
+		-webkit-transition: -webkit-box-shadow .25s;
+		transition: -webkit-box-shadow .25s;
+		transition: box-shadow .25s;
+		transition: box-shadow .25s, -webkit-box-shadow .25s;
+		border-radius: 4px 4px 4px 4px;
+		height: 25rem;
+		width: 29rem;
+		border-radius: 10px 10px 10px 10px;
+	}
+
+	.cartao .cartao-image img {
+		display: block;
+		border-radius: 10px 10px 10px 10px;
+		position: relative;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 25rem;
+		width: 29rem;
+	}
+
+	.cartao .cartao-image {
+  	position: static;
+	}
+
+	.rodape-content{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 90%;
+		justify-content: space-between;
+	}
+
+	.rodape-text {
+		font-size: 18px;
+		text-align: justify;
+		width: auto;
+	}
+
+	/* FLIP CARD TIPOS */
+	.conteudo-tipos{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around; 
+		align-items: center;
+		gap: 2rem;
+		width: 100vw;
+		height: auto;
+		padding: 0rem 3rem;
+	}
+
+	.flip-card-tipos {
+		background-color: transparent;
+		width: 28rem;
+		height: 28rem;
+		perspective: 1000px; /*3D effect*/
+		border-radius: 50%;
+	}
+
+	.flip-card-tipos-interno {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.5s;
+		transform-style: preserve-3d;
+		border-radius: 50%;
+	}
+
+	.flip-card-tipos:hover .flip-card-tipos-interno {
+		transform: rotateY(180deg);
+		border-radius: 50%;
+	}
+
+	.flip-card-tipos-frente, .flip-card-tipos-costas {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; /* Safari */
+		backface-visibility: hidden;
+		border-radius: 50%;
+	}
+
+	.flip-card-tipos-frente {
+		background-color: #bbb;
+		color: black;
+		border-radius: 50%;
+	}
+
+	.flip-card-tipos-frente img {
+		height: 28rem;
+		width: 28rem;
+		border-radius: 50%;
+	}
+
+	.flip-card-tipos-costas {
+		background-color: #64b5f6;
+		color: white;
+		transform: rotateY(180deg);
+		border-radius: 50%;
+	}
+
+	.flip-card-tipos-costas p {
+		font-size: 18px;
+		text-align: justify;
+		padding: 1rem;
+		border-radius: 50%;
+	}
+
+	.card-tipos-conteudo {
+		width: 28rem;
+		height: 28rem;
+		border-radius: 50%;
+		margin: auto;
+		text-align: center;
+		/*justify-content: center;
+		align-items: center;*/
+	}
+
+	.left-shape{
+		border-radius: 50%;
+		shape-outside: polygon(
+			0 0,
+			100% 0,
+		
+			55% 5%,
+			20% 20%,
+			5% 35%,
+		
+			0 50%,
+		
+			5% 65%,
+			20% 80%,
+			55% 95%,
+		
+			100% 100%,
+			0 100%
+		);
+		float: left;
+		width: 50%;
+		height: 100%;
+		clip-path: polygon(
+			0 0,
+			100% 0,
+		
+			55% 5%,
+			20% 20%,
+			5% 35%,
+		
+			0 50%,
+		
+			5% 65%,
+			20% 80%,
+			55% 95%,
+		
+			100% 100%,
+			0 100%
+		);
+	}
+		
+	.right-shape{
+		border-radius: 50%;
+		shape-outside: polygon(
+			100% 0,
+			0 0,
+		
+			45% 5%,
+			80% 20%,
+			95% 35%,
+		
+			100% 50%,
+		
+			95% 65%,
+			80% 80%,
+			45% 95%,
+		
+			0 100%,
+			100% 100%
+		);
+		float: right;
+		width: 50%;
+		height: 100%;
+		clip-path: polygon(
+			100% 0,
+			0 0,
+		
+			45% 5%,
+			80% 20%,
+			95% 35%,
+		
+			100% 50%,
+		
+			95% 65%,
+			80% 80%,
+			45% 95%,
+		
+			0 100%,
+			100% 100%
+		);
+	}
+
+	.card-tipos-texto {
+		padding-top: 3rem;
+		text-align: center;
+	}
+
+	.flip-card-tipos-costas button {
+		background-color: #0072cf;
+		border: none;
+		color: #fff;
+		padding: 0.9rem 2rem;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 14px;
+		cursor: pointer;
+		transition-duration: 0.3s;
+	}
+
+	.flip-card-tipos-costas button:hover {
+		background-color: #fff;
+		border: 1px solid #0072cf;
+		color: #0072cf;
+	}
+/* FIM FLIP CARD TIPOS	*/
+/* DIREITOS */
+	.direitos-page{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5rem;
+		width: 100vw;
+		height: auto;
+	}
+	
+	.direitos-image {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		
+		margin-top: 2rem;
+	}
+
+	.direitos-image img {
+		height: 100%;
+		width: 80%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	.video-direitos {
+		height: 100%; /*520px*/
+		width: 80%; /*920px*/
+		border-width: 10px;
+		border-style: groove;
+		border-color: #0072cf #64b5f6;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	.main-title {
+		text-align: center;
+		width: 100vw;
+		font-size: 32px;
+	}
+
+	h1.main-title {
+		font-size: 40px;
+	}
+
+	.lista-direitos {
+		margin-top: -7rem;
+		text-align: justify;
+		width: 90%;
+	}
+	
+	.lista-direitos ul li{
+		font-size: 20px;
+		list-style-type: square;
+	}
+/* FIM DIREITOS */
+/* QUEBRANDO SILÊNCIO */
+	.conteudo-quebrando{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		width: 100vw;
+		height: auto;
+		padding: 0 0 2rem;
+	}
+
+	.flip-card {
+		background-color: transparent;
+		width: 28rem;
+		height: 28rem;
+		perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	}
+
+	.flip-card-interno {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.5s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card:hover .flip-card-interno {
+		transform: rotateY(180deg);
+	}
+
+	.flip-card-frente, .flip-card-costas {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; /* Safari */
+		backface-visibility: hidden;
+	}
+
+	.flip-card-frente {
+		background-color: #bbb;
+		color: black;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.flip-card-frente img {
+		height: 28rem;
+		width: 28rem;
+	}
+
+	.flip-card-costas {
+		background-color: #64b5f6;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		color: white;
+		transform: rotateY(180deg);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.flip-card-costas button {
+		background-color: #0072cf;
+		border: none;
+		color: #fff;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		cursor: pointer;
+		transition-duration: 0.3s;
+	}
+
+	.flip-card-costas button:hover {
+		background-color: #fff;
+		border: 1px solid #0072cf;
+		color: #0072cf;
+	}
+
+	.flip-card-costas p {
+		font-size: 17px;
+		text-align: justify;
+		padding: 0 1rem;
+	}
+
+	.flip-card-costas ul {
+		padding: 0 !important;
+	}
+
+	.flip-card-costas li {
+		font-size: 16px;
+		text-align: justify;
+	}
+
+	.card-conteudo h4 {
+		font-size: 28px;
+		margin: 1rem 0 0;
+	}
+
+	.joguinho{
+		width: 100vw;
+		min-height: 50rem;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.iframe {
+		width: 409.6px;
+		height: 300px;
+	}
+
+	.form-login {
+		width: 28rem;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}

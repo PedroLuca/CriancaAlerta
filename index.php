@@ -12,7 +12,7 @@
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" type="image/x-icon" href="./media/logo-rodape.png">
-        <title> Criança Alerta | Bem Vindo(a) </title>
+        <title>Criança Alerta | Bem Vindo(a)</title>
         <meta charset="UTF-8">
     </head>
     <body>
@@ -20,34 +20,34 @@
             <ul class="menu">
                 <li id="menu-general"><a href="">MENU</a>
                     <ul>
-                        <li><a href="http://localhost/Crianca_Alerta/index.php">Início</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/tipo_de_violencia.html">Tipos de Violência</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/quebrando_silencio.html">Quebrando o Silêncio</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/direitos.html">Direito das Crianças</a></li>
-                        <li><a href="http://localhost/Crianca_Alerta/pages/login.php">Jogue nosso jogo!</a></li>
+                        <li><a href="index.php">Início</a></li>
+                        <li><a href="./pages/tipo_de_violencia.html">Tipos de Violência</a></li>
+                        <li><a href="./pages/quebrando_silencio.html">Quebrando o Silêncio</a></li>
+                        <li><a href="./pages/direitos.html">Direito das Crianças</a></li>
+                        <li><a href="./pages/login.php">Jogue nosso jogo!</a></li>
                     </ul>
                 </li>
             </ul>
-            <a href="http://localhost/Crianca_Alerta/index.php"><img id="logo-central" src="./media/logo-nome.png"></a>
-            <a href="http://localhost/Crianca_Alerta/index.php"><img id="menu-logo" src="./media/logo-oficial.png"></a>
+            <a href="index.php"><img id="logo-central" src="./media/logo-nome.png"></a>
+            <a href="index.php"><img id="menu-logo" src="./media/logo-oficial.png"></a>
         </nav>
-        <div class="conteudo">
-            <div class="cartao">
-                <div class="cartao-image">
-                    <a href="./pages/tipo_de_violencia.html"><img src="./media/tipos-de-violencia.jpeg"></a>
+        <section class="conteudo">
+                <div class="cartao">
+                    <div class="cartao-image">
+                        <a href="./pages/tipo_de_violencia.html"><img src="./media/tipos-de-violencia.jpeg"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="cartao">
-                <div class="cartao-image">
-                    <a href="./pages/direitos.html"><img src="./media/direitos-das-criancas.jpeg"></a>
+                <div class="cartao">    
+                    <div class="cartao-image">
+                        <a href="./pages/direitos.html"><img src="./media/direitos-das-criancas.jpeg"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="cartao">
-                <div class="cartao-image">
-                    <a href="./pages/quebrando_silencio.html"><img src="./media/quebrando-o-silencio.jpeg"></a>
+                <div class="cartao">
+                    <div class="cartao-image">
+                        <a href="./pages/quebrando_silencio.html"><img src="./media/quebrando-o-silencio.jpeg"></a>
+                    </div>
                 </div>
-            </div>
-        </div>
+        </section>
         <footer class="rodape">
             <div class="rodape-content">
                 <div class="linhas">
@@ -61,7 +61,7 @@
                     <ul>
                         <li><a class="rodape-web" href="https://instagram.com/crianca.alerta" target="_blank">Instagram</a></li>
                         <li><a class="rodape-web" href="https://github.com/criancaalerta" target="_blank">Github</a></li>
-                        <li class="rodape-web">Projetocriancaalerta@outlook.com</li>
+                        <li><a class="rodape-web" href="mailto:projetocriancaalerta@outlook.com">Projetocriancaalerta@outlook.com</a></li>
                     </ul>
                 </div>
             </div>

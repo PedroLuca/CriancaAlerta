@@ -13,10 +13,10 @@
 
     if($User['usuario'] == $usuario){
         $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Usuário já existente! Experimente outro.</div>";
-        header("Location: http://localhost/Crianca_Alerta/pages/cadastro.php");
+        header("Location: ../pages/cadastro.php");
     }else if($senha != $confirmeSenha){
         $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Senhas não compatíveis!</div>";
-        header("Location: http://localhost/Crianca_Alerta/pages/cadastro.php");
+        header("Location: ../pages/cadastro.php");
     }else {
         $senhaCrypto = crypt($senha, '$6$rounds=5000$noCh1ldMu5tS0f37/d3scP4ss.alB4trHjan');
 
@@ -27,10 +27,10 @@
 
             if(mysqli_query($con, $sql)){
                 $_SESSION['mensagem'] = "<div class='alert sucesso' role='alert'>Usuário cadastrado com sucesso!</div>";
-                header("Location: http://localhost/Crianca_Alerta/pages/login.php");
+                header("Location: ../pages/login.php");
             }else{
                 $_SESSION['mensagem'] = "<div class='alert erro' role='alert'>Usuário ou senha inválidos!</div>";
-                header("Location: http://localhost/Crianca_Alerta/pages/cadastro.php");
+                header("Location: ../pages/cadastro.php");
             }
 
             mysqli_close($con);
