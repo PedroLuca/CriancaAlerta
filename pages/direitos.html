@@ -5,6 +5,7 @@
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="../css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="../css/style.css"/>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" type="image/x-icon" href="../media/logo-rodape.png">
@@ -13,17 +14,16 @@
     </head>
     <body>
         <nav class="navigation">
-            <ul class="menu">
-                <li id="menu-general"><a href="">MENU</a>
-                    <ul>
-                        <li><a href="../index.php">Início</a></li>
-                        <li><a href="tipo_de_violencia.html">Tipos de Violência</a></li>
-                        <li><a href="quebrando_silencio.html">Quebrando o Silêncio</a></li>
-                        <li><a href="direitos.html">Direito das Crianças</a></li>
-                        <li><a href="login.php">Jogue nosso jogo</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="menu-mobile" id="menu-mobile">
+                <button class="btn-mobile" id="btn-mobile"><span class="hamburguer"></span><span class="text-desktop">Menu</span></button>
+                <ul class="nav-menu">
+                    <li><a href="../index.php">Início</a></li>
+                    <li><a href="tipo_de_violencia.html">Tipos de Violência</a></li>
+                    <li><a href="quebrando_silencio.html">Quebrando o Silêncio</a></li>
+                    <li><a href="direitos.html">Direito das Crianças</a></li>
+                    <li><a href="login.php">Jogue nosso jogo!</a></li>
+                </ul>
+            </div>
             <a href="../index.php"><img id="logo-central" src="../media/logo-nome.png"></a>
             <a href="../index.php"><img id="menu-logo" src="../media/logo-oficial.png"></a>
         </nav>
@@ -32,13 +32,14 @@
             <div class="direitos-image">
                 <img src="../media/quebrando5.jpg">
             </div>
-            <video controls class="video-direitos"> <!--VÍDEO-->
-                <source src="../media/direitos-das-crianças.mp4" type="video/mp4">
-                    <object>
-                        <embed src="demo.mp4" type="application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always">  		
-                    </object>
-                    Formato não suportado 
-            </video>
+            <!-- <video controls class="video-direitos">
+                <source src="../media/direitos-das-crianças.mp4" type="video/mp4" />
+                <object>
+                    <embed src="demo.mp4" type="application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always">  		
+                </object>
+                Formato não suportado
+            </video> -->
+            <iframe class="video-direitos" src="https://www.youtube.com/embed/wmNnzKOOuA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h2 class="main-title">Quais são os direitos das crianças</h2>
             <div class="lista-direitos">
                 <ul>
@@ -84,5 +85,6 @@
                 </div>
             </div>
         </footer>
+        <script src="../js/app.js"></script>
     </body>
 </html>

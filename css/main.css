@@ -13,7 +13,7 @@ body {
 	/*height: 100vh;
 	width:  100vw;*/
 	overflow-x: hidden;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: sans-serif;
 }
 
 /* ::-webkit-scrollbar {
@@ -61,7 +61,7 @@ body {
 
 /* MENU */
 .navigation {
-	background-color: #64b5f6; /*#ee6e73*/
+	background-color: #64b5f6 !important;
 	height: 5rem;
 	display: flex;
 	align-items: center;
@@ -85,8 +85,9 @@ body {
 .menu li a{
 	text-align: center;
 	color: black;
-	text-decoration:none;
-	display:block;
+	text-decoration: none;
+	display: block;
+	padding: 1rem;
 }
 
 .menu li a:hover{
@@ -165,10 +166,13 @@ body {
 	width: 100vw;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
-	height: calc(100vh - 4rem);
-	padding: 5rem;
+	height: auto;
+	min-height: calc(100vh - 4rem);
+	padding: 5rem 0;
+	gap: 5rem;
 }
 
 .joguinho{
@@ -233,10 +237,15 @@ body {
 
 .linhas {
 	margin-bottom: 20px;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .links {
 	padding-right: 10rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .links li {
@@ -689,13 +698,37 @@ body {
 }
 /* FIM LOGIN E CADASTRO */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
+	.navigation {
+		background-color: #64b5f6; /*#ee6e73*/
+		height: 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 !important;
+		width: 100vw;
+		z-index: 9999;
+	}
+
+	#menu-logo {
+		display: block;
+		position: relative;
+		height: 4rem;
+		width: 5rem;
+	}
+	
+	#logo-central {
+		display: block;
+		height: 4rem;
+		width: 12rem;
+	}
+
 	.conteudo{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 2rem 0;
-		gap: 2rem 0;
+		gap: 2rem;
 		width: 100vw;
 		height: auto;
 	}
@@ -926,7 +959,7 @@ body {
 	}
 
 	.card-tipos-texto a button {
-		margin-top: -2.5rem;
+		margin-top: -2rem;
 	}
 
 	.flip-card-tipos-costas button {
@@ -972,8 +1005,8 @@ body {
 	}
 	
 	.video-direitos {
-		height: 100%; /*520px*/
-		width: 80%; /*920px*/
+		height: 254px; /*520px*/
+		width: 400px; /*920px*/
 		border-width: 10px;
 		border-style: groove;
 		border-color: #0072cf #64b5f6;
@@ -1011,6 +1044,7 @@ body {
 		width: 100vw;
 		height: auto;
 		padding: 0 0 2rem;
+		flex-wrap: wrap;
 	}
 
 	.flip-card {
@@ -1116,7 +1150,8 @@ body {
 		display: inherit;
 		flex-direction: inherit;
 		gap: 0.5rem;
-		margin-bottom: 0.5rem;
+		margin: -1rem 0 1rem;
+		justify-content: space-around;
 	}
 
 	.card-conteudo h4 {

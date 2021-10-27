@@ -2784,14 +2784,6 @@ video.responsive-video {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.breadcrumb i,
-.breadcrumb [class^="mdi-"], .breadcrumb [class*="mdi-"],
-.breadcrumb i.material-icons {
-  display: inline-block;
-  float: left;
-  font-size: 24px;
-}
-
 .breadcrumb:before {
   content: '\E5CC';
   color: rgba(255, 255, 255, 0.7);
@@ -4288,7 +4280,7 @@ nav {
   background-color: #ee6e73;
   width: 100%;
   height: 56px;
-  line-height: 56px;
+  /* line-height: 56px; */
 }
 
 nav.nav-extended {
@@ -4491,7 +4483,7 @@ nav .input-field label.active i {
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 64px;
-    line-height: 64px;
+    /* line-height: 64px; */
   }
   .navbar-fixed {
     height: 64px;
@@ -5726,12 +5718,6 @@ body.keyboard-focused .dropdown-content li:focus {
   transition: none !important;
 }
 
-.waves-circle {
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
-}
-
 .waves-input-wrapper {
   border-radius: 0.2em;
   vertical-align: bottom;
@@ -5742,15 +5728,6 @@ body.keyboard-focused .dropdown-content li:focus {
   top: 0;
   left: 0;
   z-index: 1;
-}
-
-.waves-circle {
-  text-align: center;
-  width: 2.5em;
-  height: 2.5em;
-  line-height: 2.5em;
-  border-radius: 50%;
-  -webkit-mask-image: none;
 }
 
 .waves-block {
@@ -6054,16 +6031,6 @@ body.keyboard-focused .dropdown-content li:focus {
   font-size: 0.8rem;
   -webkit-transform: translateY(-140%);
           transform: translateY(-140%);
-}
-
-.materialboxed {
-  display: block;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-  position: relative;
-  -webkit-transition: opacity .4s;
-  transition: opacity .4s;
-  -webkit-backface-visibility: hidden;
 }
 
 .materialboxed:hover:not(.active) {
@@ -6859,10 +6826,6 @@ textarea.materialize-textarea {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-}
-
-[type="checkbox"] {
-  /* checkbox aspect */
 }
 
 [type="checkbox"] + span:not(.lever) {

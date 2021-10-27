@@ -23,6 +23,7 @@
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="../css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="../css/style.css"/>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" type="image/x-icon" href="../media/logo-rodape.png">
@@ -31,18 +32,16 @@
     </head>
     <body>
         <nav class="navigation">
-            <ul class="menu">
-                <li id="menu-general"><a href="">MENU</a>
-                    <ul>
-                        <li><a href="../index.php">Início</a></li>
-                        <li><a href="tipo_de_violencia.html">Tipos de Violência</a></li>
-                        <li><a href="quebrando_silencio.html">Quebrando o Silêncio</a></li>
-                        <li><a href="direitos.html">Direito das Crianças</a></li>
-                        <li><a href="?logout=1">Sair</a></li>
-                    </ul>
-                </li>
-                <li id="menu-general"></li>
-            </ul>
+            <div class="menu-mobile" id="menu-mobile">
+                <button class="btn-mobile" id="btn-mobile"><span class="hamburguer"></span><span class="text-desktop">Menu</span></button>
+                <ul class="nav-menu">
+                    <li><a href="../index.php">Início</a></li>
+                    <li><a href="tipo_de_violencia.html">Tipos de Violência</a></li>
+                    <li><a href="quebrando_silencio.html">Quebrando o Silêncio</a></li>
+                    <li><a href="direitos.html">Direito das Crianças</a></li>
+                    <li><a href="?logout=1">Sair</a></li>
+                </ul>
+            </div>
             <a href="../index.php"><img id="logo-central" src="../media/logo-nome.png"></a>
             <a href="../index.php"><img id="menu-logo" src="../media/logo-oficial.png"></a>
         </nav>
@@ -82,5 +81,6 @@
         ?>
         </div>
         <script src="../js/main.js"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>

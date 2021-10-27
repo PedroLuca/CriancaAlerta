@@ -9,6 +9,7 @@
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="../css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="../css/style.css"/>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" type="image/x-icon" href="../media/logo-rodape.png">
@@ -17,17 +18,16 @@
     </head>
     <body>
         <nav class="navigation">
-            <ul class="menu">
-                <li id="menu-general"><a href="">MENU</a>
-                    <ul>
-                        <li><a href="../index.php">Início</a></li>
-                        <li><a href="tipo_de_violencia.html">Tipos de Violência</a></li>
-                        <li><a href="quebrando_silencio.html">Quebrando o Silêncio</a></li>
-                        <li><a href="direitos.html">Direito das Crianças</a></li>
-                        <li><a href="login.php">Jogue nosso jogo</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="menu-mobile" id="menu-mobile">
+                <button class="btn-mobile" id="btn-mobile"><span class="hamburguer"></span><span class="text-desktop">Menu</span></button>
+                <ul class="nav-menu">
+                    <li><a href="../index.php">Início</a></li>
+                    <li><a href="tipo_de_violencia.html">Tipos de Violência</a></li>
+                    <li><a href="quebrando_silencio.html">Quebrando o Silêncio</a></li>
+                    <li><a href="direitos.html">Direito das Crianças</a></li>
+                    <li><a href="login.php">Jogue nosso jogo!</a></li>
+                </ul>
+            </div>
             <a href="../index.php"><img id="logo-central" src="../media/logo-nome.png"></a>
             <a href="../index.php"><img id="menu-logo" src="../media/logo-oficial.png"></a>
         </nav>
@@ -55,32 +55,6 @@
                 </div>
             </div>
         </section>
-        <!-- <div class="row conteudo-login-cadastro">
-            <div class="col s12 m4 offset-m4">
-                <div class="card">
-                    <div class="card-action #64b5f6 blue lighten-2 white-text">
-                        <h3 style="text-align: center;">Login</h3>
-                    </div>
-                    <div class="card-content">
-                        <form method="POST" action="../php/loginValidation.php">
-                            <div class="form-field">
-                                <label for="username">Nome de usuário</label>
-                                <input type="text" id="username" name="usuario">
-                            </div>
-                            <div class="form-field">
-                                <label for="password">Senha</label>
-                                <input type="password" id="password" name="senha">
-                            </div>
-                            <div class="form-field">
-                                <button class="btn-large waves-effect #64b5f6 blue lighten-2" style="width:100%">Entrar</button>
-                            </div></br>
-                            <p style="text-align: center;"> Não tem cadastro?
-                            <a href="cadastro.php" class="login-link">Registre-se agora!</a></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <footer class="rodape">
             <div class="rodape-content">
                 <div class="linhas">
@@ -115,5 +89,6 @@
         ?>
         </div>
         <script src="../js/main.js"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>
